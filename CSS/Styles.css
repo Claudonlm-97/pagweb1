@@ -1,0 +1,221 @@
+/*FUENTES*/
+@font-face {
+    font-family: "nevis";
+    src: url("Fonts/nevis.eot");
+    src: url("Fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("Fonts/nevis.woff") format("woff"),
+        url("Fonts/nevis.ttf") format("truetype"),
+        url("Fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*ESTILOS GENERALES*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url("../Img-mio/background5.jpg");
+    /*background-repeat: no-repeat;
+    background-size: 100%;*/
+    background-attachment: fixed;
+}
+
+/*FORMULARIOS*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select{
+    border: 1px solid rgb(26, 102, 173);
+    box-shadow: 0px 0px 2px rgb(26, 102, 173) inset;
+    background: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus{
+    border: 1px solid rgba(47, 23, 56, 0.993);
+    color: black;
+}
+
+/*CABECERA*/
+#header{
+    /*min-height: 1024px;*/
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#header a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+#header #logotipo{
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+    
+}
+
+#header #logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    color:white;
+    font-family: nevis;
+    /*text-transform: uppercase;*/
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 2px rgb(97, 97, 97);
+    transition: all .3s;
+}
+
+#header h4{
+    text-align: center;
+    font-size: 23px;
+    color:white;
+    font-family: nevis;
+    text-shadow: 0px 2px 2px rgb(97, 97, 97);
+    transition: all .3s;
+}
+
+#header h4:hover{
+    text-shadow: 0px 0px 4px white;
+}
+
+/*Menú*/
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(25, 143, 163, 0.5);
+    color: white;
+    font-family: sans-serif, helvetica, arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 61%;
+
+}
+
+#nav > ul >li{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+    text-align: center;
+    transition: all .3s;
+}
+
+#nav > ul >li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav > ul >li a:first-child{
+    border-left: 1px solid gray;
+}
+
+#nav > ul >li:hover{
+    background-color: grey;
+    box-shadow: 0px 0px 10px rgb(26, 102, 173);
+}
+
+/*MENÚ DEZPLEGABLE*/
+#nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+#nav > ul > li:hover > ul{
+    display: block;
+}
+
+#nav > ul > li:hover > ul > li{
+    background-color: gray;
+    border-bottom: 1px solid rgb(26, 102, 173);
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+#nav > ul > li:hover > ul > li:hover{
+    /*box-shadow: inset 0px 0px 10px rgb(26, 102, 173);*/
+    background: rgb(26, 102, 173);
+}
+
+/*CONTENIDO*/
+#content{
+    width: 1380px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+/*BARRA LATERAL*/
+#aside{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: rgba(25, 143, 163, 0.5);
+    border: 1px solid gray;
+    box-shadow: 0px 2px 4px gray;
+    font-family: sans-serif, arial, helvetica;
+}
+
+#aside .widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed gray;
+}
+
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#aside h3{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: rgb(26, 102, 173);
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+}
+
+#aside a{
+    color: rgba(47, 23, 56, 0.993);
+}
